@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="index.css">
     <style>
       .dropbutton {
-        background-color:blueviolet;
-        color:white;
+        background-color:#c77DFF;
+        color:#240046;
         padding: 16px;
         font-size: 16px;
         border: none;
@@ -25,7 +25,7 @@
       .dropdown-content {
         display:none;
         position: absolute;
-        background-color:purple;
+        background-color:#7B2CBF;
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba (0,0,0,0.2);
         padding: 12px 16px;
@@ -33,20 +33,20 @@
       }
 
       .dropdown-content a {
-        color:black;
+        color:#240046;
         padding: 12px 16px;
         text-decoration: none;
         display: block;
       }
 
-      .dropdown-content a:hover {background-color: #f1f1f1}
+      .dropdown-content a:hover {background-color: #E0AAFF}
 
       .dropdown:hover .dropdown-content {
         display: block;
       }
 
       .dropdown:hover .dropbutton{
-        background-color:pink;
+        background-color:#E0AAFF;
       }
 
       * {
@@ -90,15 +90,26 @@
       font-size: 18px;
       border: none;
       outline: none;
-      background-color: purple;
-      color: white;
+      background-color:#5a189a;
+      color: #E0AAFF;
       cursor: pointer;
       padding: 15px;
       border-radius: 4px;
     }
 
     #myBtn:hover{
-      background-color: #555;
+      background-color: #3C096C;
+    }
+
+    .zoom{
+      padding: 50px;
+      transition: transform .2s;
+    }
+
+    .zoom:hover{
+      -ms-transform: scale(1.5);
+      -webkit-transform: scale(1.5);
+      transform: scale(1.5);
     }
     </style>
   </head>
@@ -123,7 +134,9 @@
       }
     </script>
 
-    <img src="lcLogo.jpg" alt="Logo" class="center">
+    <a href="#">
+      <img src="lcLogo.jpg" alt="Logo" class="center">
+    </a>
     <div class = "dropdown">
       <button class="dropbutton">Menu</button>
       <div class = "dropdown-content">
@@ -138,55 +151,73 @@
 
     <div class= "row">
       <div class= "column">
-        <a href ="#">
-          <img src= "lcLogo.jpg" alt="Project #1" style= "width:100%;height:300px;">
-        </a>
+        <div class="zoom">
+          <a href ="#">
+            <img src= "lcLogo.jpg" alt="Project #1" style= "width:100%;height:300px;">
+          </a>
+        </div>
       </div>
       <div class= "column">
-        <a href ="#">
-          <img src= "lcLogo.jpg" alt="Project #1" style= "width:100%;height:300px;">
-        </a>
+        <div class= 'zoom'>
+          <a href ="#">
+            <img src= "lcLogo.jpg" alt="Project #1" style= "width:100%;height:300px;">
+          </a>
+        </div>
       </div>
       <div class= "column">
-        <a href ="#">
-          <img src= "lcLogo.jpg" alt="Project #1" style= "width:100%;height:300px;">
-        </a>
+        <div class= "zoom">
+          <a href ="#">
+            <img src= "lcLogo.jpg" alt="Project #1" style= "width:100%;height:300px;">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class = "row">
+      <div class = "column">
+        <div class = "zoom">
+          <a href ="#">
+            <img src= "lcLogo.jpg" alt="Project #1" style= "width:100%;height:300px;">
+          </a>
+        </div>
+      </div>
+      <div class= "column">
+        <div class = "zoom">
+          <a href ="#">
+            <img src= "lcLogo.jpg" alt="Project #1" style= "width:100%;height:300px;">
+          </a>
+        </div>
+      </div>
+      <div class= "column">
+        <div class = "zoom">
+          <a href ="#">
+            <img src= "lcLogo.jpg" alt="Project #1" style= "width:100%;height:300px;">
+          </a>
+        </div>
       </div>
     </div>
 
     <div class= "row">
       <div class= "column">
-        <a href ="#">
-          <img src= "lcLogo.jpg" alt="Project #1" style= "width:100%;height:300px;">
-        </a>
+        <div class = "zoom">
+          <a href ="#">
+            <img src= "lcLogo.jpg" alt="Project #1" style= "width:100%;height:300px;">
+          </a>
+        </div>
       </div>
       <div class= "column">
-        <a href ="#">
-          <img src= "lcLogo.jpg" alt="Project #1" style= "width:100%;height:300px;">
-        </a>
+        <div class = "zoom">
+          <a href ="#">
+            <img src= "lcLogo.jpg" alt="Project #1" style= "width:100%;height:300px;">
+          </a>
+        </div>
       </div>
       <div class= "column">
-        <a href ="#">
-          <img src= "lcLogo.jpg" alt="Project #1" style= "width:100%;height:300px;">
-        </a>
-      </div>
-    </div>
-
-    <div class= "row">
-      <div class= "column">
-        <a href ="#">
-          <img src= "lcLogo.jpg" alt="Project #1" style= "width:100%;height:300px;">
-        </a>
-      </div>
-      <div class= "column">
-        <a href ="#">
-          <img src= "lcLogo.jpg" alt="Project #1" style= "width:100%;height:300px;">
-        </a>
-      </div>
-      <div class= "column">
-        <a href ="#">
-          <img src= "lcLogo.jpg" alt="Project #1" style= "width:100%;height:300px;">
-        </a>
+        <div class = "zoom">
+          <a href ="#">
+            <img src= "lcLogo.jpg" alt="Project #1" style= "width:100%;height:300px;">
+          </a>
+        </div>
       </div>
     </div>
 
