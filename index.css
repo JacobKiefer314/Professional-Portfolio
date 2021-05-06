@@ -1,35 +1,15 @@
-/* =============================
-	Mobile Styles: 0 - 480 pixels
-   =============================
-*/ 
 
+/* Mobile Devices */
 @media only screen and (max-width:480px){
-    body {
-        display:-webkit-flex;
-        display:flex;
+    img {
+        -webkit-flex: 2 1 500px;
+        flex: 2 1 500px;
         -webkit-flex-flow:row wrap;
         flex-flow:row wrap;
-        display:block;
-         }
-
-         img{
-             display:-webkit-flex;
-            display:flex;
-            -webkit-flex-flow:row wrap;
-            flex-flow:row wrap;
-            display:block;
-         }
+     }
 
 
-
-/* =================================================
-	Tablet and Desktop Styles: 481 pixels and greater
-   =================================================
-*/ 
-
+/* Computer Devices */
 @media only screen and (min-width:481px){
-    .project{
-        width:100%;
-        height:100%;
-    }
+
 }

@@ -134,7 +134,14 @@
     }
 
     body{
-      background-image: linear-gradient(#3CB0CD,#7CD5F3,#B4E7F8,#ADFFBC,#1BEE9A,#21C063,#229631)
+      background-image:linear-gradient(#3CB0CD,#7CD5F3,#B4E7F8,#ADFFBC,#1BEE9A,#21C063,#229631);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+      width: 100%;
+      height: 100%;
+      overflow-x:hidden;
     }
    
       </style>
@@ -164,44 +171,25 @@
   </div>
 
   <div class="container">
-      <form action="index.html">
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="First Name..." required>
+      <form action="https://formspree.io/f/xyylkobv"
+      method="POST"
+      >
 
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Last Name..." required>
+      <label>
+        Your Email:
+        <input type="email" name="_replyto">
+      </label>
+      <br>
+      <label>
+        Your Message:
+        <textarea name="message"></textarea>
+      </label>
 
-        <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="email" id="email" required>
-
-        <label for="country">Country</label>
-        <select id="country" name="country" required>
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-            <option value="japan">Japan</option>
-            <option value="china">China</option>
-            <option value="korea">Korea</option>
-            <option value="africa">Africa</option>
-        </select>
+      <button type="submit">Send</button>
         
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Type in here..." style="height:200px"></textarea>
-
-        <button class="submit-button" type="submit" onclick="alert('This form has been sent')">Submit</button>
     </form>
   </div>
 
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
  
  
   
