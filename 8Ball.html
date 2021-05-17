@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--Jacob Kiefer
+  04/12/21-->
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>8 Ball</title>
+    <link rel="stylesheet" href="#">
+    <style>
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .column{
+        float:left;
+        width:33.33%;
+        padding: 5px;
+      }
+
+      .row::after{
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .social{
+        padding-left:200px;
+        padding-right:400px;
+      }
+
+      .contact{
+        padding-left:1000px;
+        padding-right:500px;
+      }
+
+      .center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+    }
+
+    #myBtn{
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index:99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color:#21C063;
+      color: #000000;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 4px;
+    }
+
+    #myBtn:hover{
+      background-color: #229631;
+    }
+
+    .zoom{
+      padding: 50px;
+      transition: transform .6s;
+    }
+
+    .zoom:hover{
+      -ms-transform: scale(1.5);
+      -webkit-transform: scale(1.5);
+      transform: scale(1.5);
+    }
+
+    body{
+      background-image:linear-gradient(#3CB0CD,#7CD5F3,#B4E7F8,#ADFFBC,#1BEE9A,#21C063,#229631);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+      width: 100%;
+      height: 100%;
+      overflow-x:hidden;
+    }
+    
+    </style>
+  </head>
+  <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Back To Top</button>
+    <script>
+      var mybutton = document.getElementById("myBtn");
+
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        }else{
+          mybutton.style.display = "none";
+        }
+      }
+
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+
+    <a href="index.html">
+      <img src="Kiefer.png" alt="Logo" class="center">
+    </a>
+
+    <div class ="center">
+        <h1>Magic 8 Ball</h1>
+      </div>
+
+    <div>
+        <img src="8Ball.png" alt="8Ball" class="center" height="50%" width="50%">
+      </div>
+      
+      <div class ="center">
+        <p>This is my magic 8 ball project in C++.This is the second programming language I know besides web.It startes with a main loop and picks a word out of the 72 sentences.Then picks at random at a 72%.
+          Then it says "The magic 8 ball says" and endl.This was made May 11, 2021</p>
+      </div>
+
+    
+      
+      
+      
+          <div class="center">
+            <a href="https://github.com/JacobKiefer314">GitHub</a>
+          </div>
+
+
+  </body>
+</html>
